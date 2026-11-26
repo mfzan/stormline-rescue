@@ -70,6 +70,16 @@ kit's vendored library.
 MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
+## Validation
+
+- Node sim: the autopilot flies a full mission end to end — takeoff at 57 kt,
+  13 valley ring gates, final approach, smooth landing (vs 255 fpm), fuel 81%
+  remaining — and repeats it on the hard Cerro Torre strip (vs 192 fpm).
+- Browser playtest (Playwright, headless Chromium): takeoff, climb to 869 m
+  at 127 kt, fuel burning, **0 console errors**.
+- Screenshots are real frames from the game (`?shot=cover|approach|rescue|map`),
+  1280×720 JPEG, each under 256 KiB.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
